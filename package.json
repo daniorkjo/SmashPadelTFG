@@ -13,7 +13,7 @@
     "react-bootstrap": "^1.5.0",
     "react-bootstrap-table": "^4.3.1",
     "react-custom-scrollbars": "^4.2.1",
-    "react-dom": "^17.0.1",
+    "react-dom": "^17.0.2",
     "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
@@ -23,8 +23,8 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -47,6 +47,8 @@
     ]
   },
   "devDependencies": {
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "cross-env": "^7.0.3",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "postcss": "8.4.31"
   }
 }
